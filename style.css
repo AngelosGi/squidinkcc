@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #48c8ff;
   /* border: 1px solid rgb(255, 213, 0); */
 }
 
@@ -14,8 +16,9 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
+  background-color: #48c8ff;
   /* responsive background */
-  background-image: url(./images/Untitled.png);
+  background-image: url(./images/Soup1a_.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,8 +28,9 @@
 .title {
   display: flex;
   justify-content: center;
-  margin: auto;
-  border: 1px solid rgb(255, 213, 0);
+  margin-top: 5rem;
+  margin-bottom: 25rem;
+  /* border: 1px solid rgb(255, 213, 0); */
   font-size: 4rem;
   /* width: 100%; */
 }
@@ -34,17 +38,47 @@
 .timer {
   display: flex;
   justify-content: center;
-  margin: auto;
-  font-size: 6.5rem;
-  border: 1px solid rgb(255, 213, 0);
+  /* margin: auto; */
+  /* font-size: 3.5rem; */
+  /* border: 1px solid rgb(255, 213, 0); */
   /* width: 100%; */
+}
+
+/* body {
+  text-align: center;
+  padding: 70px 50px;
+  background: #0d1a29;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+} */
+
+#timer {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+#timer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 90px;
+  /* border: 1px solid rgb(255, 213, 0); */
+}
+
+#timer div span {
+  color: #ffffff;
+  display: block;
+  font-size: 0.4em;
+  font-weight: 400;
+  /* border: 1px solid rgb(255, 213, 0); */
 }
 
 .call-to-action {
   display: flex;
   justify-content: space-evenly;
   width: 100vw;
-  margin: auto;
+  margin-top: 6rem;
+  margin-left: 7rem;
   /* border: 1px solid rgb(255, 213, 0); */
 }
 
@@ -53,17 +87,41 @@
   justify-content: center;
   width: 100vw;
   margin: auto;
-  border: 1px solid rgb(255, 213, 0);
+  /* border: 1px solid rgb(255, 213, 0); */
 }
 
 .call-to-action button {
+  display: flex;
+  align-items: end;
+  border: 5px; solid rgb(255, 213, 0);
+  background: none;
+  
+  /* color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; */
+ text-decoration: underline;
   font-size: 1.5rem;
+  font-weight: 500;
   width: 12.75rem;
   height: 3.25rem;
 }
 
 .social-network button {
+  border: 5px; solid rgb(255, 213, 0);
+  background: none;
+  font-weight: 500;
+  text-decoration: underline;
   margin: 2rem;
   width: 2.5rem;
   height: 2.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 2 2 100px #ffffff;
+
 }
