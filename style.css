@@ -110,7 +110,7 @@ button:hover {
 
   /* scale hides the modal  */
   transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
+  transition: 100ms ease-in-out;
 
   border: 1px solid black;
   border-radius: 10px;
@@ -153,7 +153,8 @@ button:hover {
   padding: 10px 15px;
 }
 
-/* maybe we dont need overlay */
+/* maybe i dont need this overlay 
+maybe take it out from js*/
 
 #overlay {
   position: fixed;
