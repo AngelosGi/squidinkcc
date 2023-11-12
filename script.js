@@ -21,3 +21,4 @@ function updateTimer() {
         '<div>' + s + '<span><br>Seconds</span></div>';
 }
 setInterval('updateTimer()', 1000);
+
