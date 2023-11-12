@@ -1,43 +1,59 @@
+// Select all elements with the attribute data-modal-target
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+// Select all elements with the attribute data-close-button
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+// Select the element with the id 'overlay'
+const overlay = document.getElementById('overlay');
 
-
-const openModalButtons = document.querySelectorAll('[data-modal-target]')
-const closeModalButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
-
+// Add click event listeners to open modals
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.modalTarget)
-        openModal(modal)
-    })
-})
+        // Find the modal using the data-modal-target attribute
+        const modal = document.querySelector(button.dataset.modalTarget);
+        // Open the modal
+        openModal(modal);
+    });
+});
 
+// Add click event listeners to close modals
 closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const modal = button.closest('.modal')
-        closeModal(modal)
-    })
-})
+        // Find the closest modal ancestor of the clicked button
+        const modal = button.closest('.modal');
+        // Close the modal
+        closeModal(modal);
+    });
+});
 
+// Function to open a modal
 function openModal(modal) {
-    if(modal == null) return
-    modal.classList.add('active')
-    overlay.classList.add('active')
+    // Check if the modal exists
+    if (modal == null) return;
+    // Add 'active' class to the modal and overlay
+    modal.classList.add('active');
+    overlay.classList.add('active');
 }
 
+// Function to close a modal
 function closeModal(modal) {
-    if(modal==null) return
-    modal.classList.remove('active')
-    overlay.classList.remove('active')
+    // Check if the modal exists
+    if (modal == null) return;
+    // Remove 'active' class from the modal and overlay
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
 }
 
+// Add click event listener to the overlay to close modals
 overlay.addEventListener('click', () => {
-    const modals = document.querySelectorAll('.modal.active')
+    // Select all modals with 'modal' and 'active' classes
+    const modals = document.querySelectorAll('.modal.active');
+    // Close each modal
     modals.forEach(modal => {
-        closeModal(modal)
-    })
-})
+        closeModal(modal);
+    });
+});
 
-
+// Timer (need to add comments)
 function updateTimer() {
     future = Date.parse("dec 31, 2023 23:59:00");
     now = new Date();
