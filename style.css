@@ -3,8 +3,16 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #48c8ff;
   color: white;
   text-shadow: 0 0 20px #48c8ff;
+  background-image: url(./images/Soup1a_.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
@@ -14,13 +22,6 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #48c8ff;
-  /* responsive background image*/
-  background-image: url(./images/Soup1a_.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-attachment: fixed; */
 }
 
 .title {
@@ -29,7 +30,6 @@
   margin-top: 18rem;
   margin-bottom: 12rem;
   font-size: 4rem;
-  /* width: 100%; */
 }
 
 .timer {
@@ -37,7 +37,6 @@
   width: 100%;
   justify-content: center;
   margin: auto;
-  /* font-size: 3.5rem; */
 }
 
 #timer {
@@ -64,7 +63,7 @@
   justify-content: space-evenly;
   width: 100vw;
   margin-top: 6rem;
-  margin-left: 7rem;
+  /* margin-left: 7rem; */
 }
 
 .social-network {
@@ -74,31 +73,30 @@
   margin: auto;
 }
 
-.call-to-action button {
-  display: flex;
-  align-items: end;
+.call-to-action button,
+.social-network button {
+  color: white;
   border: none;
   background: none;
-  text-decoration: underline;
-  font-size: 1.5rem;
   font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.call-to-action button {
+  font-size: 1.5rem;
   width: 12.75rem;
   height: 3.25rem;
 }
 
 .social-network button {
-  border: none;
-  background: none;
-  font-weight: 500;
-  text-decoration: underline;
-  margin: 2rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+  width: 5rem;
+  height: 3rem;
   text-shadow: 0 0 20px #48c8ff;
 }
 
 button:hover {
-  cursor: pointer;
-  /* text-transform: uppercase; */
   text-shadow: 0 0 20px #000000;
 }
