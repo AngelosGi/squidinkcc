@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // Modal window 
+=======
+>>>>>>> 4fed567d9b6a27ae4afb4afd58290d22fa289f4c
 // Select all elements with the attribute data-modal-target
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 // Select all elements with the attribute data-close-button
@@ -54,7 +57,11 @@ overlay.addEventListener('click', () => {
     });
 });
 
+<<<<<<< HEAD
 // Timer (need to add more comments)
+=======
+// Timer (need to add comments)
+>>>>>>> 4fed567d9b6a27ae4afb4afd58290d22fa289f4c
 function updateTimer() {
     future = Date.parse("dec 31, 2023 23:59:00");
     now = new Date();
