@@ -5,11 +5,9 @@
   font-family: "Roboto", sans-serif;
   color: white;
   text-shadow: 0 0 20px #48c8ff;
-  /* border: 1px solid rgb(255, 213, 0); */
 }
 
 .container {
-  /* border: 3px solid rgb(0, 0, 0); */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -30,7 +28,6 @@
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 25rem;
-  /* border: 1px solid rgb(255, 213, 0); */
   font-size: 4rem;
   /* width: 100%; */
 }
@@ -45,14 +42,6 @@
   
 }
 
-/* body {
-  text-align: center;
-  padding: 70px 50px;
-  background: #0d1a29;
-  font-family: "Roboto", sans-serif;
-  font-weight: lighter;
-} */
-
 #timer {
   font-size: 3em;
   font-weight: 400;
@@ -63,7 +52,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   min-width: 90px;
-  /* border: 1px solid rgb(255, 213, 0); */
 }
 
 #timer div span {
@@ -71,7 +59,6 @@
   display: block;
   font-size: 0.4em;
   font-weight: 400;
-  /* border: 1px solid rgb(255, 213, 0); */
 }
 
 .call-to-action {
@@ -80,7 +67,6 @@
   width: 100vw;
   margin-top: 6rem;
   margin-left: 7rem;
-  /* border: 1px solid rgb(255, 213, 0); */
 }
 
 .social-network {
@@ -88,7 +74,6 @@
   justify-content: center;
   width: 100vw;
   margin: auto;
-  /* border: 1px solid rgb(255, 213, 0); */
 }
 
 .call-to-action button {
@@ -117,8 +102,6 @@
 
 button:hover {
     cursor: pointer;
-    text-transform: uppercase;
-    
-    
-
+    /* text-transform: uppercase; */
+    text-shadow: 0 0 20px #000000;
 }
