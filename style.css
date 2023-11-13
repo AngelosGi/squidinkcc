@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #48c8ff;
   color: white;
-  /* text-shadow: 0 0 20px #48c8ff; */
+  text-shadow: 0 0 20px #48c8ff;
   background-image: url(./images/Soup1a_.png);
   background-size: cover;
   background-repeat: no-repeat;
