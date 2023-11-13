@@ -78,3 +78,36 @@ function updateTimer() {
         '<div>' + s + '<span><br>Seconds</span></div>';
 }
 setInterval('updateTimer()', 1000);
+
+
+
+// forms hide and seek
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle changes in the "Dev" select box
+    document.getElementById('dev').addEventListener('change', function() {
+        var devSelect = document.getElementById('dev');
+        var yearsInput = document.getElementById('years');
+
+        if (devSelect.value === 'no') {
+            yearsInput.style.display = 'none';
+        } else {
+            yearsInput.style.display = 'block';
+        }
+    });
+
+    // Function to handle changes in the "Gender" select box
+    document.getElementById('gender').addEventListener('change', function() {
+        var genderSelect = document.getElementById('gender');
+        var termsSelect = document.getElementById('terms');
+        var termsNbSelect = document.getElementById('terms-nb');
+
+        if (genderSelect.value === 'Non-binary') {
+            termsSelect.style.display = 'none';
+            termsNbSelect.style.display = 'block';
+        } else {
+            termsSelect.style.display = 'block';
+            termsNbSelect.style.display = 'none';
+        }
+    });
+});
