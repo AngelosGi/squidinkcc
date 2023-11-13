@@ -88,11 +88,11 @@
                         <label for="post-code">Post-code</label>
                         <input type="text" id="post-code"><br>
                         
-                        <!-- if no hide years if yes open years 
+                        <!-- if dev is no hide years if yes open years 
                         and insert select id -->
                         <label for="dev">Dev</label>
                         <select id="dev">
-                            <option value="no">No</option>
+                            <option selected="selected" value="no">No</option>
                             <option value="yes">Yes</option>
                         </select>
 
@@ -106,26 +106,26 @@
                         <input type="date" id="Birthdate"><br>
 
 
-                        if male and female is picked then hide terms-nb 
-                        if Non-binary is picked hide terms and show terms-nb
+                        <!-- if male and female is picked then hide terms-nb 
+                        if Non-binary is picked hide terms and show terms-nb -->
                         <label for="gender">Gender</label>
                         <select id="gender">
-                        <option>Male</option>
+                        <option selected="selected">Male</option>
                         <option>Female</option>
                         <option>Non-binary</option>
                         </select>
 
-                        <label for="terms">Dev</label>
+                        <label for="terms">Do you agree with the terms and conditions?</label>
                         <select id="terms">
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>                            
                         </select>
 
 
-                        <label for="terms-nb">Dev</label>
+                        <label for="terms-nb">Do you gracefuly agree with the terms and conditions?</label>
                         <select id="terms-nb">
-                            <option value="Yaas">Yes</option>
-                            <option value="Naa">No</option>                            
+                            <option value="Yaas">Yaas</option>
+                            <option value="Naa">Naas</option>                            
                         </select>
 
 
