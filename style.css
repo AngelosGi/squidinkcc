@@ -162,6 +162,12 @@ button:hover {
   padding: 10px 15px;
 }
 
+#terms-nb, #years {
+  display: none;
+}
+
+
+
 /* maybe i dont need this overlay 
 maybe take it out from js*/
 
