@@ -88,7 +88,7 @@ body {
   border: none;
   background: none;
   font-weight: 500;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   cursor: pointer;
 }
 
@@ -108,6 +108,7 @@ body {
 
 button:hover {
   text-shadow: 0 0 20px #000000;
+  text-decoration: underline;
 }
 
 /* modal */
@@ -116,7 +117,7 @@ button:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-
+  overflow-y: auto;
   /* scale hides the modal  */
   transform: translate(-50%, -50%) scale(0);
   transition: 100ms ease-in-out;
@@ -162,9 +163,95 @@ button:hover {
   padding: 10px 15px;
 }
 
+/* input form styling */
+
 #terms-nb, #years {
   display: none;
 }
+
+/* input {
+  border: none;
+  appearance: none;
+  padding: 0.2rem;
+  border-radius: 3px;
+  width: 250px;
+} */
+
+
+/* Form styling
+needs work!!!! */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form select,
+form label {
+  margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  border: 1px solid #ffffff; /* White border for better visibility */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 60%; /* Full width for text, number, and date inputs */
+}
+
+select {
+  width: 60%;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+/* Styling for radio buttons and checkboxes */
+/* Uncomment these if you decide to use radio buttons and checkboxes */
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 0.2rem;
+}
+
+form label[for="mr"],
+form label[for="ms"] {
+  margin-right: 1rem;
+}
+
+
+/* Button styling */
+form input[type="submit"],
+form input[type="reset"] {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: 1px solid #ffffff; /* White border for better visibility */
+  border-radius: 5px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
 
 
 
