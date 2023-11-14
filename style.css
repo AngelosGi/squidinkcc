@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+video {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #48c8ff;
