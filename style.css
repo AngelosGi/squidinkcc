@@ -163,23 +163,17 @@ button:hover {
   padding: 10px 15px;
 }
 
-/* input form styling */
+/* js default */
 
 #terms-nb, #years {
   display: none;
 }
 
-/* input {
-  border: none;
-  appearance: none;
-  padding: 0.2rem;
-  border-radius: 3px;
-  width: 250px;
-} */
-
 
 /* Form styling
 needs work!!!! */
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -206,11 +200,11 @@ select {
 input[type="text"],
 input[type="number"],
 input[type="date"] {
-  width: 60%; /* Full width for text, number, and date inputs */
+  width: 50%;
 }
 
 select {
-  width: 60%;
+  width: 50%;
 }
 
 label {
