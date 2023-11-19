@@ -49,7 +49,7 @@
 
                 <form action="">
                     <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email address" name="mail" required>
+                    <input type="email" placeholder="Email address" name="mail" required>
                     <label>
                       <input type="checkbox" checked="checked" name="subscribe">Newsletter
                     </label>
@@ -81,39 +81,39 @@
                         <input type="radio" id="ms" value="Ms." name="title"><br> -->
 
                         <label for="name">Name</label>
-                        <input type="text" id="name"><br>
+                        <input type="text" id="name" required ><br>
 
                         <label for="last-name">Last name</label>
-                        <input type="text" id="last-name"><br>
-
+                        <input type="text" id="last-name" required ><br>
+                        
                         <label for="address">Address</label>
-                        <input type="text" id="address"><br>
+                        <input type="text" id="address" required ><br>
 
                         <label for="ad-number">Number</label>
-                        <input type="text" id="ad-number"><br>
+                        <input type="text" id="ad-number" required ><br>
 
                         <label for="city">City</label>
-                        <input type="text" id="city"><br>
+                        <input type="text" id="city" required ><br>
 
                         <label for="post-code">Post-code</label>
-                        <input type="text" id="post-code"><br>
+                        <input type="text" id="post-code" required ><br>
                         
                         <!-- if dev is no hide years if yes open years 
                         and insert select id -->
                         <label for="dev">Dev</label>
-                        <select id="dev">
+                        <select id="dev" required >
                             <option selected="selected" value="no">No</option>
                             <option value="yes">Yes</option>
                         </select><br>
 
                         <!-- <label for="years">Years</label><br> -->
-                        <input type="number" id="years" placeholder="Years" min="0" max="50" ><br>
+                        <input type="number" id="years" placeholder="Years" min="0" max="65" ><br>
 
                         
 
 
                         <label for="Birthdate">Birthdate</label>
-                        <input type="date" id="Birthdate"><br>
+                        <input type="date" id="Birthdate" required ><br>
 
 
                         <!-- if male and female is picked then hide terms-nb 
@@ -126,14 +126,14 @@
                         </select><br>
 
                         <label for="terms">Do you agree with the terms and conditions?</label><br>
-                        <select id="terms">
+                        <select id="terms" required >
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>                            
                         </select>
 
 
                         
-                        <select id="terms-nb">
+                        <select id="terms-nb" required >
                             <label for="terms-nb">Do you gracefuly agree with the terms and conditions?</label>
                             <option value="Yaas">Yaas</option>
                             <option value="Naa">Naas</option>                            
