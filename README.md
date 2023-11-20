@@ -1,2 +1,3 @@
 # squidinkcc
-Squidink Code Crafting website
+Squidink Code Crafting,
+Under construction landing page.
