@@ -1,3 +1,3 @@
 # squidinkcc
 Squidink Code Crafting,
-Under construction landing page.
+Under construction landing page...
